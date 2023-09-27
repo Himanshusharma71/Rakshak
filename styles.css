@@ -1,0 +1,311 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white; /* Light blue-gray background */
+    margin: 0;
+  
+}
+
+:root{
+    --first-color:#183b56;
+    --second-color:#577592;
+    --accent-color:#2294ed;
+    --accent-dark:#1d69a3;
+    --padding-inline-section:20px;
+}
+
+/* navbar */
+.navbar {
+    background-color: white; /* Dark background color for the navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 4px 5px 0; 
+   
+   
+}
+ .logo-adjustment{
+    display: flex;
+    flex-direction: row;
+ }
+ .logo-write{
+    margin-top: 16px;
+    margin-left:10px ;
+ }
+.logo1 img {
+    width: 80px; /* Adjust the logo size */
+    height: 61px;
+    margin-left: 9px;
+   
+
+}
+.button-nav{
+    display:flex;
+    justify-content: space-between;
+    width:500px;
+    height:50px;
+    
+   
+}
+.menu1{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width:500px;
+ margin-right:12px;
+   margin-top:9px;
+
+
+}
+.menu-button{
+    margin-top:11px;
+}
+.logo1{
+    background-color: rgb(215, 58, 150);
+     width:100px;
+     border-radius: 50%;
+     height: 60px;
+}
+.logo1 h1{
+    text-align: center;
+}
+.logo1:hover{
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+
+
+
+.menu1 a{
+    text-decoration: none;
+    color: black; /* Text color for menu items */
+    font-weight: bold;
+    transition: color 0.3s;
+   
+}
+
+.menu1 a:hover {
+    color: rgb(215, 58, 150); /* Text color on hover */
+    text-decoration: underline;
+}
+
+.logout-button {
+    background-color:rgb(215, 58, 150); /* Blue button color */
+    color: #fff; /* Text color for the button */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 100px;
+    margin-left: 9px;  
+    margin-right: 9px; 
+    text-decoration: none;
+}
+
+.logout-button:hover {
+    background-color: #ff00a2; 
+    transform: scale(1.1);/* Darker blue button color on hover */
+}
+
+/* hero section */
+
+
+.hero {
+ 
+    align-items: center;
+    height:800px;
+    width: 100%;
+
+}
+
+.left-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    text-align: center;
+    height:500px;
+    width:100%;
+    background-image: url(img/harrestment.jpg);
+    background-size: cover;
+    position: relative;
+    color: white; /* Text color for welcome message */
+    transition: background-color 0.3s;
+}
+.left-write{
+    height:10px;
+    position:absolute;
+    width: 550px;
+    top:120px;
+    left:120px;
+  
+      
+}
+
+
+
+.welcome-message {
+    font-size: 35x;
+    animation: fadeIn 2s ease-in-out;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    
+}
+.welcome-message2{
+    font-size: 24px;
+    animation: fadeIn 2s ease-in-out;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    
+}
+.welcome-message1 {
+    font-size: 24px;
+    animation: fadeIn 1s ease-in;
+    margin-left:10px ;
+}
+.right-part {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    left:36%;
+    /* background-image: url(bg2.webp);
+    background-size: cover; */
+    height: 300px;
+    width: 400px;
+    padding-top:30px ;
+    margin-top: 60px;
+    border: solid black 2px;
+}
+
+.upload-button {
+    display: inline-block;
+    background-color: #007bff; /* Blue button color */
+    color: #fff; /* Text color for the button */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 14px;
+}
+#video-upload{
+    margin-left: 100px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+#result{
+    margin-top: 30px;
+    height:40px;
+    margin-right: 10px;
+    animation: fadeIn 1s ease-in;
+}
+.button1{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.upload-button i {
+    margin-right: 5px;
+}
+
+.upload-button:hover {
+    background-color: #2980b9; /* Darker blue button color on hover */
+}
+
+/* about us */
+.about-team{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding:0 150px 0 150px ;
+}
+.team-img{
+    margin-top: 50px;
+    width: 50%;
+    
+}
+
+.team-img img{
+    height: 400px;
+    width: 500px;
+  
+
+}
+.team-des{
+   margin-top: 50px;
+    width: 50%;
+    
+}
+.team-des h2{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    
+}
+
+.team-des p{
+    line-height: 35px;
+    font-weight: lighter;
+}
+
+
+/* Stylish Women's Safety Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer-content {
+    display: flex;
+    
+}
+
+.safety-info,
+.social-media,
+.contact-info {
+    flex: 1;
+    padding: 0 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.personal-info,.links{
+    margin-top: 20px;
+}
+
+
+.social-link {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+  
